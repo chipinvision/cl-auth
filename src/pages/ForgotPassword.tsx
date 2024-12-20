@@ -8,12 +8,12 @@ const ForgotPassword = () => {
     <AuthLayout>
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Cardly</h1>
+          <h1 className="text-3xl font-bold text-primary">CloudLedger</h1>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-center">Forgot Password</h2>
-          <p className="text-gray-600 text-center">
+          <h2 className="text-[24px] font-bold text-left">Forgot Password</h2>
+          <p className="text-gray-600 text-left">
             Enter your email address and we'll send you a link to reset your password
           </p>
         </div>
@@ -25,7 +25,7 @@ const ForgotPassword = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="auth-input pl-12"
+                className="w-full pl-12 pr-4 py-3 text-sm font-semibold text-gray-900 block bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" size={20} />
             </div>
