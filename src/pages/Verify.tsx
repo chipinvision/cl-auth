@@ -6,12 +6,12 @@ const Verify = () => {
     <AuthLayout>
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Cardly</h1>
+          <h1 className="text-3xl font-bold text-primary">CloudLedger</h1>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-center">Verify it's you</h2>
-          <p className="text-gray-600 text-center">
+          <h2 className="text-[24px] font-bold text-left">Verify it's you</h2>
+          <p className="text-gray-600 text-left">
             Enter the 6-digit verification code we've sent to [user email id]
           </p>
         </div>

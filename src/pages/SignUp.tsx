@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import AuthLayout from "../components/AuthLayout";
 
 const SignUp = () => {
@@ -11,7 +11,7 @@ const SignUp = () => {
     <AuthLayout>
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Cardly</h1>
+          <h1 className="text-3xl font-bold text-primary">CloudLedger</h1>
         </div>
         
         <div className="flex gap-2 bg-gray-100 p-1 rounded-lg">
@@ -32,11 +32,17 @@ const SignUp = () => {
         <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-gray-900">Email</label>
+            <div className="relative">
             <input
               type="email"
               placeholder="Enter your email"
-              className="auth-input"
+              className="w-full pl-12 pr-4 py-3 text-sm font-semibold text-gray-900 block bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
+            <Mail 
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" 
+            size={20} 
+            />
+            </div>
           </div>
 
           <div className="space-y-2">
@@ -45,8 +51,12 @@ const SignUp = () => {
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="Enter password"
-                className="auth-input pr-12"
+                className="w-full pl-12 pr-4 py-3 text-sm font-semibold text-gray-900 block bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
+              <Lock 
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" 
+            size={20} 
+          />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
@@ -63,8 +73,12 @@ const SignUp = () => {
               <input
                 type={showConfirmPassword ? "text" : "password"}
                 placeholder="Confirm password"
-                className="auth-input pr-12"
+                className="w-full pl-12 pr-4 py-3 text-sm font-semibold text-gray-900 block bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
+              <Lock 
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" 
+            size={20} 
+          />
               <button
                 type="button"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}

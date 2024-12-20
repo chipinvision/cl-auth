@@ -13,7 +13,7 @@ const SignInForm = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="auth-input pl-12"
+            className="w-full pl-12 pr-4 py-3 text-sm font-semibold text-gray-900 block bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
           <Mail 
             className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" 
@@ -28,7 +28,7 @@ const SignInForm = () => {
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Enter password"
-            className="auth-input pl-12 pr-12"
+            className="w-full pl-12 pr-4 py-3 text-sm font-semibold text-gray-900 block bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
           <Lock 
             className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" 

@@ -6,7 +6,7 @@ const AuthLayout = ({ children }: { children: ReactNode }) => {
       {/* Left side - Image */}
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
         <img
-          src="/lovable-uploads/15eb296e-b4d2-4577-8863-102a9120f4c6.png"
+          src="public/Abstract Fluid Colors.jpeg"
           alt="Abstract Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
