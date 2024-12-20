@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import AuthLayout from "../components/AuthLayout";
 
 const SignIn = () => {
@@ -31,11 +31,17 @@ const SignIn = () => {
         <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-gray-900">Email</label>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="auth-input"
-            />
+            <div className="relative">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="auth-input pl-12"
+              />
+              <Mail 
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" 
+                size={20} 
+              />
+            </div>
           </div>
 
           <div className="space-y-2">
@@ -44,7 +50,11 @@ const SignIn = () => {
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="Enter password"
-                className="auth-input pr-12"
+                className="auth-input pl-12 pr-12"
+              />
+              <Lock 
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" 
+                size={20} 
               />
               <button
                 type="button"
