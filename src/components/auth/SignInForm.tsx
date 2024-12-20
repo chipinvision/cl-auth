@@ -8,7 +8,7 @@ const SignInForm = () => {
   return (
     <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
       <div className="space-y-2">
-        <label className="text-sm font-semibold text-gray-900">Email</label>
+        <label className="text-sm font-semibold text-gray-900 block">Email</label>
         <div className="relative">
           <input
             type="email"
@@ -23,7 +23,7 @@ const SignInForm = () => {
       </div>
 
       <div className="space-y-2">
-        <label className="text-sm font-semibold text-gray-900">Password</label>
+        <label className="text-sm font-semibold text-gray-900 block">Password</label>
         <div className="relative">
           <input
             type={showPassword ? "text" : "password"}
